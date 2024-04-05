@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+#include <stdio.h>
 typedef struct {
     char codigo[8];
     char nombre[15];
@@ -62,6 +63,6 @@ void ListarMateriasNota(char nombre[], int nota) {
         }
         fclose(fp);
     } else
-        
+        printf("ERROR: No se pudo abrir el archivo %s\n", nombre);
     return 0;
 }
